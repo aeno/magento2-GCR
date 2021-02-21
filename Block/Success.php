@@ -4,7 +4,7 @@ class Success extends \Magento\Framework\View\Element\Template
 {
     protected $_checkoutSession;
     protected $_helperData;
- 
+
     public function __construct(
         \Magento\Framework\View\Element\Template\Context $context,
         \Magento\Checkout\Model\Session $checkoutSession,
@@ -48,6 +48,10 @@ class Success extends \Magento\Framework\View\Element\Template
 
     public function getConfigOptInStyle() {
         return $this->_helperData->getGeneralConfig('opt_in_style');
+    }
+
+    public function getConfigLanguageCode() {
+        return $this->_helperData->getGeneralConfig('language_code');
     }
 
     public function getEstimatedDate() {

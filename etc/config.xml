@@ -6,6 +6,7 @@
                 <delivery_country>US</delivery_country>
                 <estimated_delivery_date>5</estimated_delivery_date>
                 <opt_in_style>CENTER_DIALOG</opt_in_style>
+                <language_code>en_US</language_code>
             </general>
         </gcr>
     </default>

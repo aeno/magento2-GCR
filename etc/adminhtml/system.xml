@@ -28,6 +28,10 @@
                     <source_model>Airslamit\Gcr\Model\Config\Source\OptInStyle</source_model>
                     <comment>Specifies how the opt-in module's dialog box is displayed</comment>
                 </field>
+                <field id="language_code" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Language Code</label>
+                    <comment>The language code to use when displaying the dialog box. Default is en_US.</comment>
+                </field>
             </group>
         </section>
     </system>

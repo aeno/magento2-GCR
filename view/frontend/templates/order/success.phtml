@@ -6,7 +6,7 @@
 </script>
 
 <script>
-  window.renderOptIn = function() { 
+  window.renderOptIn = function() {
     window.gapi.load('surveyoptin', function() {
       window.gapi.surveyoptin.render(
         {
@@ -20,7 +20,7 @@
           // OPTIONAL
           "opt_in_style": "<?php echo $block->getConfigOptInStyle(); ?>",
           "products": <?php print_r($block->getGtinProducts()); ?>
-        }); 
+        });
      });
   }
 </script>
@@ -29,7 +29,7 @@
 <!-- BEGIN GCR Language Code -->
 <script>
   window.___gcfg = {
-    lang: 'en_US'
+    lang: '<?php echo $block->getConfigLanguageCode(); ?>'
   };
 </script>
 <!-- END GCR Language Code -->
